@@ -28,6 +28,11 @@ public class MathController {
         return mathService.getMultiplication(num1, num2);
     }
 
+    @GetMapping("/divide")
+    public double divideNumbers(@RequestParam("num1")double num1, @RequestParam("num2") double num2){
+        return mathService.getDivision(num1, num2);
+    }
+
     @GetMapping("/*")
     public String getMessage() {
         return "Ready for use";
