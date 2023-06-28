@@ -23,8 +23,10 @@ public class MathController {
         return mathService.getAddition(num1, num2);
     }
 
-
-
+    @GetMapping("/multiply")
+    public int multiplyNumbers(@RequestParam("num1") int num1, @RequestParam("num2") int num2) {
+        return mathService.getMultiplication(num1, num2);
+    }
 
     @GetMapping("/*")
     public String getMessage() {

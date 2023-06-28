@@ -9,4 +9,8 @@ public class MathService {
         return num1 + num2;
     }
 
+    public int getMultiplication(int num1, int num2){
+        return num1 * num2;
+    }
+
 }
